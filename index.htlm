@@ -1,1 +1,11 @@
-<h1>ciao</h1>
+<html>
+<head><title> testa del documento</title>
+</head>
+<body>
+<front color="green" size="10" face="arial"> ciao
+<i> italico</i>
+<b> grassetto</b>
+<s> barrato</s>
+<u> sottolineato</u></fort><br/>
+</body>
+</html
