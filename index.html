@@ -1,3 +1,219 @@
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sito per scuola</title>
+  <style>
+    /* Reset di base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Corpo della pagina */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1350&q=80');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    header h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2em;
+    }
+
+    /* Menu di navigazione con dropdown */
+    nav {
+      background-color: #0066cc;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    .dropdown {
+      display: inline-block;
+      position: relative;
+      margin: 0 10px;
+    }
+
+    .dropbtn {
+      background-color: #0066cc;
+      color: white;
+      padding: 10px 20px;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: white;
+      min-width: 180px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+      text-align: left;
+    }
+
+    .dropdown-content a {
+      color: #004080;
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown:hover .dropbtn {
+      background-color: #005bb5;
+    }
+
+    /* Contenuto principale */
+    main {
+      padding: 40px;
+      max-width: 1000px;
+      margin: auto;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    main h2 {
+      color: #004080;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    .box-container {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .box {
+      flex: 1 1 45%;
+      background-color: #e6ecf5;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+      min-width: 250px;
+    }
+
+    .box h3 {
+      color: #004080;
+      margin-bottom: 10px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Pagina principale</h1>
+    <p>Tutti i lavori che abbiamo svolto durante l'anno scolastico</p>
+  </header>
+
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn">Primo periodo</button>
+      <div class="dropdown-content">
+       <a href="registrazione.html">Registrazione in html</a>
+        <a href="intestazioni.html">Intestazioni in html</a>
+        <a href="formattazione.html">Formattazione in html</a>
+        <a href="immagine.html">Foto in html</a>
+        <a href="liste.html">Liste in html</a>
+        <a href="voti.html">Tabella  voti in html</a>
+        <a href="ricetta.html">Ricetta in html</a>
+        <a href="esercitazione.html">Esercitazione in html</a>
+        <a href="registrazione.html">Registrazione in html</a>
+      </div>
+    </div>
+
+    <div class="dropdown">
+      <button class="dropbtn">Secondo periodo</button>
+      <div class="dropdown-content">
+        <a href="bootstrap2.html">Bootstrap con modal</a>
+        <a href="tabellita.html">Tabella in css</a>
+        <a href="boxFlottanti.html">Box flottanti in css</a>
+        <a href="bootstrap.html">Bootstrap </a>
+        <a href="bootstrap2.html">Bootstrap con modal</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <h2>Tutti i nostri lavori!</h2>
+    <div class="box-container">
+      <div class="box">
+        <h3>html</h3>
+        <a href="intestazioni.html">Intestazioni in html</a>
+        <br>
+        <a href="formattazione.html">Formattazione in html</a>
+        <br>
+        <a href="immagine.html">Foto in html</a>
+        <br>
+        <a href="liste.html">Liste in html</a>
+        <br>
+        <a href="voti.html">Tabella  voti in html</a>
+        <br>
+        <a href="ricetta.html">Ricetta in html</a>
+        <br>
+        <a href="esercitazione.html">Esercitazione in html</a>
+        <br>
+      </div>
+
+      <div class="box">
+        <h3>Secondo periodo</h3>
+        <a href="tabellita.html">Tabella in css</a>
+        <br>
+        <a href="boxFlottanti.html">Box flottanti in css</a>
+        <br>
+        <a href="bootstrap.html">Bootstrap </a>
+        <br>
+        <a href="bootstrap2.html">Bootstrap con modal</a>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>Istituto Tecnico "Stanislao Cannizzaro"</p>
+  </footer>
+
+</body>
+</html>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
